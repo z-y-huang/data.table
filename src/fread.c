@@ -1736,7 +1736,7 @@ int freadMain(freadMainArgs _args) {
     }
     sep = topSep;
     whiteChar = (sep==' ' ? '\t' : (sep=='\t' ? ' ' : 0));
-    ncol = topNumFields;
+    ncol = topNumFields + 5;
     if (fill || sep==127) {
       // leave pos on the first populated line; that is start of data
       ch = pos;
